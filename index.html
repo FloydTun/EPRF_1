@@ -1,0 +1,2692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Work Templates</title>
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 15px;
+    max-width: 1000px;
+    background: #f3f3f3;
+    color: #222;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.section-title {
+    background: #333;
+    color: white;
+    padding: 12px 15px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.template {
+    background: white;
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.template h3 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 180px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.45;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    resize: vertical;
+}
+
+button {
+    margin-top: 10px;
+    margin-right: 5px;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background: #222;
+    color: white;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.add-button {
+    background: #333;
+}
+
+.remove-button {
+    background: #777;
+}
+
+.reset-button {
+    background: #777;
+}
+
+.finding {
+    display: flex;
+    align-items: flex-start;
+    margin: 12px 0;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.finding input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    margin-top: 1px;
+    flex-shrink: 0;
+}
+
+.subheading {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.value-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    gap: 8px;
+    font-size: 16px;
+}
+
+.value-row input {
+    width: 120px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+}
+
+.narrative {
+    background: white;
+    margin-top: 30px;
+    padding: 18px;
+    border-radius: 12px;
+    border: 3px solid #333;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.narrative h2 {
+    margin-top: 0;
+}
+
+#finalNarrative {
+    min-height: 500px;
+}
+
+.copy-final {
+    background: #000;
+    font-size: 18px;
+    padding: 14px 20px;
+}
+
+.clear-final {
+    background: #777;
+    font-size: 18px;
+    padding: 14px 20px;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<h1>Work Templates</h1>
+
+
+<!-- ================================================= -->
+<!-- HISTORY -->
+<!-- ================================================= -->
+
+<div class="section-title">
+
+<h2>HISTORY</h2>
+
+</div>
+
+
+<!-- ================================================= -->
+<!-- SE -->
+<!-- ================================================= -->
+
+<div class="template">
+
+<h3>SE</h3>
+
+<textarea id="se">SE
+Nil fatigue
+Nil headache, nil dizziness or lightheadedness, nil visual changes, nil photophobia, nil altered sensations
+Nil SOB or SOBOE, nil cold or flu symptoms, nil pleuritic pain
+Nil chest pain, nil palpitations
+Nil nausea or vomiting, nil abdominal pain, nil flank pain, nil pain or stinging on urination, nil increased frequency of urination, nil dark/cloudy colours or strong odours, nil haematuria
+Last bowel motion: [ENTER TIME/DATE], nil diarrhoea
+Normal food and fluid intake
+Nil back pain
+Nil recent falls, injuries or trauma</textarea>
+
+<button
+id="seButton"
+class="add-button"
+onclick="toggleSection('se')">
+
+Add SE
+
+</button>
+
+<button
+class="reset-button"
+onclick="resetText('se', seDefault)">
+
+Reset
+
+</button>
+
+</div>
+
+
+<!-- ================================================= -->
+<!-- SHx -->
+<!-- ================================================= -->
+
+<div class="template">
+
+<h3>SHx</h3>
+
+<textarea id="shx">SHx
+Lives with: [ENTER]
+Works as / Retired: [ENTER]
+Own home or retirement village: [ENTER]
+Maintains own ADLs and home management
+Receives support with ADLs and home management: [ENTER]
+House warm, clean and tidy
+Good family contact and support
+Nil concerns with access to, or engagement with primary healthcare
+Mobility aids: [ENTER]
+Has a medical alarm
+Nil accessibility concerns</textarea>
+
+<button
+id="shxButton"
+class="add-button"
+onclick="toggleSection('shx')">
+
+Add SHx
+
+</button>
+
+<button
+class="reset-button"
+onclick="resetText('shx', shxDefault)">
+
+Reset
+
+</button>
+
+</div>
+
+
+<!-- ================================================= -->
+<!-- EXAMINATION -->
+<!-- ================================================= -->
+
+<div class="section-title">
+
+<h2>EXAMINATION</h2>
+
+</div>
+
+
+<!-- ================================================= -->
+<!-- ON ARRIVAL -->
+<!-- ================================================= -->
+
+<div class="template">
+
+<h3>ON ARRIVAL</h3>
+
+<textarea id="onarrival">ON ARRIVAL
+
+[ENTER INITIAL PRESENTATION / SCENE FINDINGS]</textarea>
+
+<button
+id="onarrivalButton"
+class="add-button"
+onclick="toggleSection('onarrival')">
+
+Add ON ARRIVAL
+
+</button>
+
+<button
+class="reset-button"
+onclick="resetText('onarrival', onarrivalDefault)">
+
+Reset
+
+</button>
+
+</div>
+
+
+<!-- ================================================= -->
+<!-- ON EXAMINATION -->
+<!-- ================================================= -->
+
+<div class="template">
+
+<h3>ON EXAMINATION</h3>
+
+<textarea id="onexamination">ON EXAMINATION
+
+[ENTER GENERAL EXAMINATION FINDINGS]</textarea>
+
+<button
+id="onexaminationButton"
+class="add-button"
+onclick="toggleSection('onexamination')">
+
+Add ON EXAMINATION
+
+</button>
+
+<button
+class="reset-button"
+onclick="resetText('onexamination', onexaminationDefault)">
+
+Reset
+
+</button>
+
+</div>
+
+
+<!-- ================================================= -->
+<!-- GENERAL -->
+<!-- ================================================= -->
+
+<div class="template">
+
+<h3>GENERAL</h3>
+
+<div class="subheading">
+Normal findings
+</div>
+
+<label class="finding">
+<input type="checkbox"
+data-system="GENERAL"
+data-text="Appears undistressed"
+onchange="updateNarrative()">
+
+<span>Appears undistressed</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="GENERAL"
+data-text="Good personal hygiene"
+onchange="updateNarrative()">
+
+<span>Good personal hygiene</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="GENERAL"
+data-text="Dressed appropriately"
+onchange="updateNarrative()">
+
+<span>Dressed appropriately</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="GENERAL"
+data-text="Moist mucous membranes"
+onchange="updateNarrative()">
+
+<span>Moist mucous membranes</span>
+</label>
+
+
+<div class="subheading">
+Abnormal findings
+</div>
+
+<label class="finding">
+<input type="checkbox"
+data-system="GENERAL"
+data-text="Appears distressed"
+onchange="updateNarrative()">
+
+<span>Appears distressed</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="GENERAL"
+data-text="Poor personal hygiene"
+onchange="updateNarrative()">
+
+<span>Poor personal hygiene</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="GENERAL"
+data-text="Inappropriately dressed"
+onchange="updateNarrative()">
+
+<span>Inappropriately dressed</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="GENERAL"
+data-text="Dry mucous membranes"
+onchange="updateNarrative()">
+
+<span>Dry mucous membranes</span>
+</label>
+
+<label class="finding"
+>
+<input type="checkbox"
+data-system="GENERAL"
+data-text="Pale / flushed / cyanosed / mottled"
+onchange="updateNarrative()">
+
+<span>Pale / flushed / cyanosed / mottled</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="GENERAL"
+data-text="Diaphoretic"
+onchange="updateNarrative()">
+
+<span>Diaphoretic</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="GENERAL"
+data-text="Obvious pain or discomfort"
+onchange="updateNarrative()">
+
+<span>Obvious pain or discomfort</span>
+</label>
+
+</div>
+
+
+<!-- ================================================= -->
+<!-- NEURO -->
+<!-- ================================================= -->
+
+<div class="template">
+
+<h3>NEURO</h3>
+
+<div class="subheading">
+Normal findings
+</div>
+
+<label class="finding">
+<input type="checkbox"
+data-system="NEURO"
+data-text="Orientated to time, date, person and place"
+onchange="updateNarrative()">
+
+<span>Orientated to time, date, person and place</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="NEURO"
+data-text="Rational thought processes"
+onchange="updateNarrative()">
+
+<span>Rational thought processes</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="NEURO"
+data-text="Answers questions appropriately"
+onchange="updateNarrative()">
+
+<span>Answers questions appropriately</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="NEURO"
+data-text="FAST negative"
+onchange="updateNarrative()">
+
+<span>FAST negative</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="NEURO"
+data-text="Nil facial droop, nil slurred speech, nil unilateral weakness"
+onchange="updateNarrative()">
+
+<span>Nil facial droop, nil slurred speech, nil unilateral weakness</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="NEURO"
+data-text="Equal strength against resistance"
+onchange="updateNarrative()">
+
+<span>Equal strength against resistance</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="NEURO"
+data-text="Recalls events, nil loss of consciousness with event"
+onchange="updateNarrative()">
+
+<span>Recalls events, nil loss of consciousness with event</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="NEURO"
+data-text="Nil seizure activity or incontinence"
+onchange="updateNarrative()">
+
+<span>Nil seizure activity or incontinence</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="NEURO"
+data-text="PEARL"
+onchange="updateNarrative()">
+
+<span>PEARL</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="NEURO"
+data-text="Nil nystagmus"
+onchange="updateNarrative()">
+
+<span>Nil nystagmus</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="NEURO"
+data-text="Good finger to nose and flappy fish coordination"
+onchange="updateNarrative()">
+
+<span>Good finger to nose and flappy fish coordination</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="NEURO"
+data-text="Good balance"
+onchange="updateNarrative()">
+
+<span>Good balance</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="NEURO"
+data-text="Mobilises independently with steady gait"
+onchange="updateNarrative()">
+
+<span>Mobilises independently with steady gait</span>
+</label>
+
+
+<div class="subheading">
+Abnormal findings
+</div>
+
+<label class="finding">
+<input type="checkbox"
+data-system="NEURO"
+data-text="Altered orientation to time, date, person or place"
+onchange="updateNarrative()">
+
+<span>Altered orientation to time, date, person or place</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="NEURO"
+data-text="Irrational / abnormal thought processes"
+onchange="updateNarrative()">
+
+<span>Irrational / abnormal thought processes</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="NEURO"
+data-text="Unable to answer questions appropriately"
+onchange="updateNarrative()">
+
+<span>Unable to answer questions appropriately</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="NEURO"
+data-text="FAST positive"
+onchange="updateNarrative()">
+
+<span>FAST positive</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="NEURO"
+data-text="Facial droop"
+onchange="updateNarrative()">
+
+<span>Facial droop</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="NEURO"
+data-text="Slurred speech"
+onchange="updateNarrative()">
+
+<span>Slurred speech</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="NEURO"
+data-text="Unilateral weakness"
+onchange="updateNarrative()">
+
+<span>Unilateral weakness</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="NEURO"
+data-text="Unequal strength against resistance"
+onchange="updateNarrative()">
+
+<span>Unequal strength against resistance</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="NEURO"
+data-text="Amnesia / unable to recall events"
+onchange="updateNarrative()">
+
+<span>Amnesia / unable to recall events</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="NEURO"
+data-text="Loss of consciousness"
+onchange="updateNarrative()">
+
+<span>Loss of consciousness</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="NEURO"
+data-text="Seizure activity"
+onchange="updateNarrative()">
+
+<span>Seizure activity</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="NEURO"
+data-text="Incontinence"
+onchange="updateNarrative()">
+
+<span>Incontinence</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="NEURO"
+data-text="Non-PEARL"
+onchange="updateNarrative()">
+
+<span>Non-PEARL</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="NEURO"
+data-text="Nystagmus"
+onchange="updateNarrative()">
+
+<span>Nystagmus</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="NEURO"
+data-text="Poor finger-to-nose coordination"
+onchange="updateNarrative()">
+
+<span>Poor finger-to-nose coordination</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="NEURO"
+data-text="Poor rapid alternating movement / flappy fish"
+onchange="updateNarrative()">
+
+<span>Poor rapid alternating movement / flappy fish</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="NEURO"
+data-text="Poor balance"
+onchange="updateNarrative()">
+
+<span>Poor balance</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="NEURO"
+data-text="Unsteady gait"
+onchange="updateNarrative()">
+
+<span>Unsteady gait</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="NEURO"
+data-text="Requires assistance to mobilise"
+onchange="updateNarrative()">
+
+<span>Requires assistance to mobilise</span>
+</label>
+
+</div>
+
+
+<!-- ================================================= -->
+<!-- RESP -->
+<!-- ================================================= -->
+
+<div class="template">
+
+<h3>RESP</h3>
+
+<div class="subheading">
+Observations
+</div>
+
+<div class="value-row">
+
+<label>RR:</label>
+
+<input
+type="text"
+id="respRR"
+placeholder="RR"
+oninput="updateNarrative()">
+
+<label>SpO₂:</label>
+
+<input
+type="text"
+id="respSpO2"
+placeholder="SpO₂"
+oninput="updateNarrative()">
+
+<label>O₂:</label>
+
+<input
+type="text"
+id="respO2"
+placeholder="Room air"
+oninput="updateNarrative()">
+
+</div>
+
+
+<div class="subheading">
+Normal findings
+</div>
+
+<label class="finding">
+<input type="checkbox"
+data-system="RESP"
+data-text="Regular and non laboured"
+onchange="updateNarrative()">
+
+<span>Regular and non laboured</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="RESP"
+data-text="Normal work of breathing"
+onchange="updateNarrative()">
+
+<span>Normal work of breathing</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="RESP"
+data-text="Nil accessory muscle use"
+onchange="updateNarrative()">
+
+<span>Nil accessory muscle use</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="RESP"
+data-text="Speaking full sentences"
+onchange="updateNarrative()">
+
+<span>Speaking full sentences</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="RESP"
+data-text="Audible sounds"
+onchange="updateNarrative()">
+
+<span>Audible sounds</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="RESP"
+data-text="Good equal air entry"
+onchange="updateNarrative()">
+
+<span>Good equal air entry</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="RESP"
+data-text="Nil stridor"
+onchange="updateNarrative()">
+
+<span>Nil stridor</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="RESP"
+data-text="Nil wheeze or crackles on auscultation"
+onchange="updateNarrative()">
+
+<span>Nil wheeze or crackles on auscultation</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="RESP"
+data-text="Nil calf pain or tenderness"
+onchange="updateNarrative()">
+
+<span>Nil calf pain or tenderness</span>
+</label>
+
+
+<div class="subheading">
+Abnormal findings
+</div>
+
+<label class="finding">
+<input type="checkbox"
+data-system="RESP"
+data-text="Irregular and/or laboured respirations"
+onchange="updateNarrative()">
+
+<span>Irregular and/or laboured respirations</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="RESP"
+data-text="Abnormal respiratory rate"
+onchange="updateNarrative()">
+
+<span>Abnormal respiratory rate</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="RESP"
+data-text="Increased work of breathing"
+onchange="updateNarrative()">
+
+<span>Increased work of breathing</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="RESP"
+data-text="Accessory muscle use"
+onchange="updateNarrative()">
+
+<span>Accessory muscle use</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="RESP"
+data-text="Unable to speak full sentences"
+onchange="updateNarrative()">
+
+<span>Unable to speak full sentences</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="RESP"
+data-text="Reduced SpO₂ / hypoxia"
+onchange="updateNarrative()">
+
+<span>Reduced SpO₂ / hypoxia</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="RESP"
+data-text="Audible abnormal respiratory sounds"
+onchange="updateNarrative()">
+
+<span>Audible abnormal respiratory sounds</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="RESP"
+data-text="Reduced / absent air entry"
+onchange="updateNarrative()">
+
+<span>Reduced / absent air entry</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="RESP"
+data-text="Unequal air entry"
+onchange="updateNarrative()">
+
+<span>Unequal air entry</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="RESP"
+data-text="Stridor"
+onchange="updateNarrative()">
+
+<span>Stridor</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="RESP"
+data-text="Wheeze"
+onchange="updateNarrative()">
+
+<span>Wheeze</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="RESP"
+data-text="Crackles"
+onchange="updateNarrative()">
+
+<span>Crackles</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="RESP"
+data-text="Rhonchi"
+onchange="updateNarrative()">
+
+<span>Rhonchi</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="RESP"
+data-text="Pleural rub"
+onchange="updateNarrative()">
+
+<span>Pleural rub</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="RESP"
+data-text="Calf pain / tenderness"
+onchange="updateNarrative()">
+
+<span>Calf pain / tenderness</span>
+</label>
+
+</div>
+
+
+<!-- ================================================= -->
+<!-- CARDIO -->
+<!-- ================================================= -->
+
+<div class="template">
+
+<h3>CARDIO</h3>
+
+<div class="subheading">
+Observations
+</div>
+
+<div class="value-row">
+
+<label>HR:</label>
+
+<input
+type="text"
+id="cardioHR"
+placeholder="HR"
+oninput="updateNarrative()">
+
+<label>BP:</label>
+
+<input
+type="text"
+id="cardioBP"
+placeholder="BP"
+oninput="updateNarrative()">
+
+<label>Temp:</label>
+
+<input
+type="text"
+id="cardioTemp"
+placeholder="Temp"
+oninput="updateNarrative()">
+
+</div>
+
+
+<div class="subheading">
+Normal findings
+</div>
+
+<label class="finding">
+<input type="checkbox"
+data-system="CARDIO"
+data-text="Strong regular radial pulse"
+onchange="updateNarrative()">
+
+<span>Strong regular radial pulse</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="CARDIO"
+data-text="Skin warm, dry and well perfused"
+onchange="updateNarrative()">
+
+<span>Skin warm, dry and well perfused</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="CARDIO"
+data-text="Nil diaphoresis"
+onchange="updateNarrative()">
+
+<span>Nil diaphoresis</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="CARDIO"
+data-text="Cap refill less than 3 seconds"
+onchange="updateNarrative()">
+
+<span>Cap refill less than 3 seconds</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="CARDIO"
+data-text="Nil JVD or peripheral oedema"
+onchange="updateNarrative()">
+
+<span>Nil JVD or peripheral oedema</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="CARDIO"
+data-text="Afebrile"
+onchange="updateNarrative()">
+
+<span>Afebrile</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="CARDIO"
+data-text="Nil postural hypotension"
+onchange="updateNarrative()">
+
+<span>Nil postural hypotension</span>
+</label>
+
+
+<div class="subheading">
+Abnormal findings
+</div>
+
+<label class="finding">
+<input type="checkbox"
+data-system="CARDIO"
+data-text="Weak / irregular / abnormal radial pulse"
+onchange="updateNarrative()">
+
+<span>Weak / irregular / abnormal radial pulse</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="CARDIO"
+data-text="Poor peripheral perfusion"
+onchange="updateNarrative()">
+
+<span>Poor peripheral perfusion</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="CARDIO"
+data-text="Cool / clammy skin"
+onchange="updateNarrative()">
+
+<span>Cool / clammy skin</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="CARDIO"
+data-text="Diaphoresis"
+onchange="updateNarrative()">
+
+<span>Diaphoresis</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="CARDIO"
+data-text="Delayed capillary refill"
+onchange="updateNarrative()">
+
+<span>Delayed capillary refill</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="CARDIO"
+data-text="JVD"
+onchange="updateNarrative()">
+
+<span>JVD</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="CARDIO"
+data-text="Peripheral oedema"
+onchange="updateNarrative()">
+
+<span>Peripheral oedema</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="CARDIO"
+data-text="Febrile"
+onchange="updateNarrative()">
+
+<span>Febrile</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="CARDIO"
+data-text="Hypotensive / hypertensive"
+onchange="updateNarrative()">
+
+<span>Hypotensive / hypertensive</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="CARDIO"
+data-text="Postural hypotension"
+onchange="updateNarrative()">
+
+<span>Postural hypotension</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="CARDIO"
+data-text="Abnormal 12-lead ECG"
+onchange="updateNarrative()">
+
+<span>Abnormal 12-lead ECG</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="CARDIO"
+data-text="AF / ectopy / other dysrhythmia"
+onchange="updateNarrative()">
+
+<span>AF / ectopy / other dysrhythmia</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="CARDIO"
+data-text="Acute ST changes"
+onchange="updateNarrative()">
+
+<span>Acute ST changes</span>
+</label>
+
+
+<div class="value-row">
+
+<label>12 lead:</label>
+
+<input
+type="text"
+id="cardioECG"
+placeholder="ECG findings"
+oninput="updateNarrative()">
+
+</div>
+
+</div>
+
+
+<!-- ================================================= -->
+<!-- ABDO -->
+<!-- ================================================= -->
+
+<div class="template">
+
+<h3>ABDO</h3>
+
+<div class="subheading">
+Observations
+</div>
+
+<div class="value-row">
+
+<label>BGL:</label>
+
+<input
+type="text"
+id="abdoBGL"
+placeholder="BGL"
+oninput="updateNarrative()">
+
+</div>
+
+
+<div class="subheading">
+Normal findings
+</div>
+
+<label class="finding">
+<input type="checkbox"
+data-system="ABDO"
+data-text="Abdomen soft and non tender"
+onchange="updateNarrative()">
+
+<span>Abdomen soft and non tender</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="ABDO"
+data-text="Nil rebound tenderness"
+onchange="updateNarrative()">
+
+<span>Nil rebound tenderness</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="ABDO"
+data-text="Nil masses, scars or distension"
+onchange="updateNarrative()">
+
+<span>Nil masses, scars or distension</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="ABDO"
+data-text="Nil swelling"
+onchange="updateNarrative()">
+
+<span>Nil swelling</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="ABDO"
+data-text="Nil guarding"
+onchange="updateNarrative()">
+
+<span>Nil guarding</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="ABDO"
+data-text="Active bowel sounds"
+onchange="updateNarrative()">
+
+<span>Active bowel sounds</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="ABDO"
+data-text="Normoglycaemic"
+onchange="updateNarrative()">
+
+<span>Normoglycaemic</span>
+</label>
+
+
+<div class="subheading">
+Abnormal findings
+</div>
+
+<label class="finding">
+<input type="checkbox"
+data-system="ABDO"
+data-text="Abdomen distended"
+onchange="updateNarrative()">
+
+<span>Abdomen distended</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="ABDO"
+data-text="Abdominal tenderness"
+onchange="updateNarrative()">
+
+<span>Abdominal tenderness</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="ABDO"
+data-text="Rebound tenderness"
+onchange="updateNarrative()">
+
+<span>Rebound tenderness</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="ABDO"
+data-text="Guarding"
+onchange="updateNarrative()">
+
+<span>Guarding</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="ABDO"
+data-text="Rigidity"
+onchange="updateNarrative()">
+
+<span>Rigidity</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="ABDO"
+data-text="Palpable mass"
+onchange="updateNarrative()">
+
+<span>Palpable mass</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="ABDO"
+data-text="Scars"
+onchange="updateNarrative()">
+
+<span>Scars</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="ABDO"
+data-text="Hernia / swelling"
+onchange="updateNarrative()">
+
+<span>Hernia / swelling</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="ABDO"
+data-text="Absent / reduced / hyperactive bowel sounds"
+onchange="updateNarrative()">
+
+<span>Absent / reduced / hyperactive bowel sounds</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="ABDO"
+data-text="Abnormal BGL / dysglycaemia"
+onchange="updateNarrative()">
+
+<span>Abnormal BGL / dysglycaemia</span>
+</label>
+
+</div>
+
+
+<!-- ================================================= -->
+<!-- MSS -->
+<!-- ================================================= -->
+
+<div class="template">
+
+<h3>MSS</h3>
+
+<div class="subheading">
+Normal findings
+</div>
+
+<label class="finding">
+<input type="checkbox"
+data-system="MSS"
+data-text="Mobilises independently"
+onchange="updateNarrative()">
+
+<span>Mobilises independently</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="MSS"
+data-text="Equal strength in limbs"
+onchange="updateNarrative()">
+
+<span>Equal strength in limbs</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="MSS"
+data-text="Nil signs of head injury"
+onchange="updateNarrative()">
+
+<span>Nil signs of head injury</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="MSS"
+data-text="Nil neck pain on palpation"
+onchange="updateNarrative()">
+
+<span>Nil neck pain on palpation</span>
+</label>
+
+
+<div class="subheading">
+Abnormal findings
+</div>
+
+<label class="finding">
+<input type="checkbox"
+data-system="MSS"
+data-text="Reduced mobility"
+onchange="updateNarrative()">
+
+<span>Reduced mobility</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="MSS"
+data-text="Unequal strength"
+onchange="updateNarrative()">
+
+<span>Unequal strength</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="MSS"
+data-text="Obvious deformity"
+onchange="updateNarrative()">
+
+<span>Obvious deformity</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="MSS"
+data-text="Signs of head injury"
+onchange="updateNarrative()">
+
+<span>Signs of head injury</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="MSS"
+data-text="Neck pain / tenderness"
+onchange="updateNarrative()">
+
+<span>Neck pain / tenderness</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="MSS"
+data-text="Back pain / tenderness"
+onchange="updateNarrative()">
+
+<span>Back pain / tenderness</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="MSS"
+data-text="Reduced ROM"
+onchange="updateNarrative()">
+
+<span>Reduced ROM</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="MSS"
+data-text="Pain with movement"
+onchange="updateNarrative()">
+
+<span>Pain with movement</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="MSS"
+data-text="Unable to weight-bear"
+onchange="updateNarrative()">
+
+<span>Unable to weight-bear</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="MSS"
+data-text="Crepitus"
+onchange="updateNarrative()">
+
+<span>Crepitus</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="MSS"
+data-text="Abnormal sensation"
+onchange="updateNarrative()">
+
+<span>Abnormal sensation</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="MSS"
+data-text="Reduced / absent distal pulses"
+onchange="updateNarrative()">
+
+<span>Reduced / absent distal pulses</span>
+</label>
+
+</div>
+
+
+<!-- ================================================= -->
+<!-- TRAUMA LOOK -->
+<!-- ================================================= -->
+
+<div class="template">
+
+<h3>TRAUMA — LOOK</h3>
+
+<label class="finding">
+<input type="checkbox"
+data-system="TRAUMA LOOK"
+data-text="Wounds"
+onchange="updateNarrative()">
+
+<span>Wounds</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="TRAUMA LOOK"
+data-text="Deformity"
+onchange="updateNarrative()">
+
+<span>Deformity</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="TRAUMA LOOK"
+data-text="Bruising"
+onchange="updateNarrative()">
+
+<span>Bruising</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="TRAUMA LOOK"
+data-text="Swelling"
+onchange="updateNarrative()">
+
+<span>Swelling</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="TRAUMA LOOK"
+data-text="Bleeding"
+onchange="updateNarrative()">
+
+<span>Bleeding</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="TRAUMA LOOK"
+data-text="Abnormal colour"
+onchange="updateNarrative()">
+
+<span>Abnormal colour</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="TRAUMA LOOK"
+data-text="Obvious asymmetry"
+onchange="updateNarrative()">
+
+<span>Obvious asymmetry</span>
+</label>
+
+</div>
+
+
+<!-- ================================================= -->
+<!-- TRAUMA FEEL -->
+<!-- ================================================= -->
+
+<div class="template">
+
+<h3>TRAUMA — FEEL</h3>
+
+<label class="finding">
+<input type="checkbox"
+data-system="TRAUMA FEEL"
+data-text="Deformity"
+onchange="updateNarrative()">
+
+<span>Deformity</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="TRAUMA FEEL"
+data-text="Tenderness"
+onchange="updateNarrative()">
+
+<span>Tenderness</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="TRAUMA FEEL"
+data-text="Pain on palpation"
+onchange="updateNarrative()">
+
+<span>Pain on palpation</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="TRAUMA FEEL"
+data-text="Bony tenderness"
+onchange="updateNarrative()">
+
+<span>Bony tenderness</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="TRAUMA FEEL"
+data-text="Muscle tenderness"
+onchange="updateNarrative()">
+
+<span>Muscle tenderness</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="TRAUMA FEEL"
+data-text="Abnormal skin temperature"
+onchange="updateNarrative()">
+
+<span>Abnormal skin temperature</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="TRAUMA FEEL"
+data-text="Altered sensation"
+onchange="updateNarrative()">
+
+<span>Altered sensation</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="TRAUMA FEEL"
+data-text="Reduced / absent distal pulse"
+onchange="updateNarrative()">
+
+<span>Reduced / absent distal pulse</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="TRAUMA FEEL"
+data-text="Crepitus"
+onchange="updateNarrative()">
+
+<span>Crepitus</span>
+</label>
+
+</div>
+
+
+<!-- ================================================= -->
+<!-- TRAUMA MOVE -->
+<!-- ================================================= -->
+
+<div class="template">
+
+<h3>TRAUMA — MOVE</h3>
+
+<label class="finding">
+<input type="checkbox"
+data-system="TRAUMA MOVE"
+data-text="Pain with movement"
+onchange="updateNarrative()">
+
+<span>Pain with movement</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="TRAUMA MOVE"
+data-text="Reduced ROM"
+onchange="updateNarrative()">
+
+<span>Reduced ROM</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="TRAUMA MOVE"
+data-text="Unable to move limb"
+onchange="updateNarrative()">
+
+<span>Unable to move limb</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="TRAUMA MOVE"
+data-text="Unable to weight-bear"
+onchange="updateNarrative()">
+
+<span>Unable to weight-bear</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="TRAUMA MOVE"
+data-text="Crepitus"
+onchange="updateNarrative()">
+
+<span>Crepitus</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="TRAUMA MOVE"
+data-text="Reduced function"
+onchange="updateNarrative()">
+
+<span>Reduced function</span>
+</label>
+
+</div>
+
+
+<!-- ================================================= -->
+<!-- DISTAL NEUROVASCULAR -->
+<!-- ================================================= -->
+
+<div class="template">
+
+<h3>DISTAL NEUROVASCULAR</h3>
+
+<label class="finding">
+<input type="checkbox"
+data-system="DISTAL NEUROVASCULAR"
+data-text="Abnormal colour: pale / dusky / white / mottled / cyanosed"
+onchange="updateNarrative()">
+
+<span>Abnormal colour: pale / dusky / white / mottled / cyanosed</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="DISTAL NEUROVASCULAR"
+data-text="Absent / weak / abnormal pulse"
+onchange="updateNarrative()">
+
+<span>Absent / weak / abnormal pulse</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="DISTAL NEUROVASCULAR"
+data-text="Delayed CRT"
+onchange="updateNarrative()">
+
+<span>Delayed CRT</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="DISTAL NEUROVASCULAR"
+data-text="Cool limb"
+onchange="updateNarrative()">
+
+<span>Cool limb</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="DISTAL NEUROVASCULAR"
+data-text="Reduced / absent movement"
+onchange="updateNarrative()">
+
+<span>Reduced / absent movement</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="DISTAL NEUROVASCULAR"
+data-text="Reduced / absent sensation"
+onchange="updateNarrative()">
+
+<span>Reduced / absent sensation</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="DISTAL NEUROVASCULAR"
+data-text="Paraesthesia"
+onchange="updateNarrative()">
+
+<span>Paraesthesia</span>
+</label>
+
+</div>
+
+
+<!-- ================================================= -->
+<!-- SKIN -->
+<!-- ================================================= -->
+
+<div class="template">
+
+<h3>SKIN</h3>
+
+<label class="finding">
+<input type="checkbox"
+data-system="SKIN"
+data-text="Rash"
+onchange="updateNarrative()">
+
+<span>Rash</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="SKIN"
+data-text="Sores"
+onchange="updateNarrative()">
+
+<span>Sores</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="SKIN"
+data-text="Skin infection"
+onchange="updateNarrative()">
+
+<span>Skin infection</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="SKIN"
+data-text="Wounds"
+onchange="updateNarrative()">
+
+<span>Wounds</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="SKIN"
+data-text="Cellulitis"
+onchange="updateNarrative()">
+
+<span>Cellulitis</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="SKIN"
+data-text="Ulceration"
+onchange="updateNarrative()">
+
+<span>Ulceration</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="SKIN"
+data-text="Swelling"
+onchange="updateNarrative()">
+
+<span>Swelling</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="SKIN"
+data-text="Abnormal colour"
+onchange="updateNarrative()">
+
+<span>Abnormal colour</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="SKIN"
+data-text="Abnormal temperature"
+onchange="updateNarrative()">
+
+<span>Abnormal temperature</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="SKIN"
+data-text="Diaphoresis"
+onchange="updateNarrative()">
+
+<span>Diaphoresis</span>
+</label>
+
+<label class="finding">
+<input type="checkbox"
+data-system="SKIN"
+data-text="Poor skin integrity"
+onchange="updateNarrative()">
+
+<span>Poor skin integrity</span>
+</label>
+
+</div>
+
+
+<!-- ================================================= -->
+<!-- RESET -->
+<!-- ================================================= -->
+
+<div class="template">
+
+<button
+class="reset-button"
+onclick="resetExamination()">
+
+RESET ALL EXAMINATION
+
+</button>
+
+</div>
+
+
+<!-- ================================================= -->
+<!-- FINAL NARRATIVE -->
+<!-- ================================================= -->
+
+<div class="narrative">
+
+<h2>FINAL NARRATIVE</h2>
+
+<p>
+Select the sections you want above.
+Tick the findings you want included.
+You can edit this box before copying.
+</p>
+
+<textarea id="finalNarrative"></textarea>
+
+<br>
+
+<button
+class="copy-final"
+onclick="copyText('finalNarrative')">
+
+COPY ENTIRE NARRATIVE
+
+</button>
+
+<button
+class="clear-final"
+onclick="clearNarrative()">
+
+CLEAR NARRATIVE
+
+</button>
+
+</div>
+
+
+<!-- ================================================= -->
+<!-- JAVASCRIPT -->
+<!-- ================================================= -->
+
+<script>
+
+
+/* ===================================================
+   OPTIONAL SECTION STATE
+=================================================== */
+
+let selectedSections = {
+
+    se: false,
+    shx: false,
+    onarrival: false,
+    onexamination: false
+
+};
+
+
+/* ===================================================
+   COPY
+=================================================== */
+
+function copyText(id) {
+
+    const text =
+        document.getElementById(id).value;
+
+
+    if (navigator.clipboard &&
+        window.isSecureContext) {
+
+        navigator.clipboard.writeText(text)
+        .then(function() {
+
+            alert("Copied to clipboard");
+
+        });
+
+    } else {
+
+        const textarea =
+            document.getElementById(id);
+
+        textarea.focus();
+
+        textarea.select();
+
+        document.execCommand("copy");
+
+        alert("Copied to clipboard");
+
+    }
+
+}
+
+
+/* ===================================================
+   TOGGLE OPTIONAL SECTION
+=================================================== */
+
+function toggleSection(id) {
+
+    selectedSections[id] =
+        !selectedSections[id];
+
+
+    const button =
+        document.getElementById(id + "Button");
+
+
+    if (selectedSections[id]) {
+
+        button.textContent =
+            "Remove " + sectionName(id);
+
+        button.className =
+            "remove-button";
+
+    } else {
+
+        button.textContent =
+            "Add " + sectionName(id);
+
+        button.className =
+            "add-button";
+
+    }
+
+
+    updateNarrative();
+
+}
+
+
+/* ===================================================
+   SECTION NAME
+=================================================== */
+
+function sectionName(id) {
+
+    const names = {
+
+        se: "SE",
+
+        shx: "SHx",
+
+        onarrival: "ON ARRIVAL",
+
+        onexamination: "ON EXAMINATION"
+
+    };
+
+
+    return names[id];
+
+}
+
+
+/* ===================================================
+   UPDATE FINAL NARRATIVE
+=================================================== */
+
+function updateNarrative() {
+
+    const narrative =
+        document.getElementById("finalNarrative");
+
+
+    let sections = [];
+
+
+    /* -----------------------------------------------
+       OPTIONAL TEXT SECTIONS
+    ----------------------------------------------- */
+
+    const optionalSections = [
+
+        "se",
+        "shx",
+        "onarrival",
+        "onexamination"
+
+    ];
+
+
+    optionalSections.forEach(function(id) {
+
+        if (selectedSections[id]) {
+
+            const text =
+                document.getElementById(id)
+                .value
+                .trim();
+
+
+            if (text) {
+
+                sections.push(text);
+
+            }
+
+        }
+
+    });
+
+
+    /* -----------------------------------------------
+       BODY SYSTEMS
+    ----------------------------------------------- */
+
+    const systems = [
+
+        "GENERAL",
+        "NEURO",
+        "RESP",
+        "CARDIO",
+        "ABDO",
+        "MSS",
+        "TRAUMA LOOK",
+        "TRAUMA FEEL",
+        "TRAUMA MOVE",
+        "DISTAL NEUROVASCULAR",
+        "SKIN"
+
+    ];
+
+
+    systems.forEach(function(system) {
+
+
+        let findings = [];
+
+
+        /* -------------------------------------------
+           CHECKBOXES
+        ------------------------------------------- */
+
+        const boxes =
+            document.querySelectorAll(
+                'input[type="checkbox"][data-system="' +
+                system +
+                '"]'
+            );
+
+
+        boxes.forEach(function(box) {
+
+            if (box.checked) {
+
+                findings.push(
+                    box.dataset.text
+                );
+
+            }
+
+        });
+
+
+        /* -------------------------------------------
+           RESP OBSERVATIONS
+        ------------------------------------------- */
+
+        if (system === "RESP") {
+
+            const rr =
+                document.getElementById(
+                    "respRR"
+                ).value.trim();
+
+
+            const spo2 =
+                document.getElementById(
+                    "respSpO2"
+                ).value.trim();
+
+
+            const oxygen =
+                document.getElementById(
+                    "respO2"
+                ).value.trim();
+
+
+            if (rr) {
+
+                findings.unshift(
+                    "RR " + rr
+                );
+
+            }
+
+
+            if (spo2) {
+
+                let oxygenText = "";
+
+
+                if (oxygen) {
+
+                    oxygenText =
+                        " on " + oxygen;
+
+                }
+
+
+                findings.unshift(
+                    "SpO₂ " +
+                    spo2 +
+                    "%" +
+                    oxygenText
+                );
+
+            }
+
+        }
+
+
+        /* -------------------------------------------
+           CARDIO OBSERVATIONS
+        ------------------------------------------- */
+
+        if (system === "CARDIO") {
+
+            const hr =
+                document.getElementById(
+                    "cardioHR"
+                ).value.trim();
+
+
+            const bp =
+                document.getElementById(
+                    "cardioBP"
+                ).value.trim();
+
+
+            const temp =
+                document.getElementById(
+                    "cardioTemp"
+                ).value.trim();
+
+
+            const ecg =
+                document.getElementById(
+                    "cardioECG"
+                ).value.trim();
+
+
+            if (hr) {
+
+                findings.unshift(
+                    "HR " + hr
+                );
+
+            }
+
+
+            if (bp) {
+
+                findings.unshift(
+                    "BP " + bp
+                );
+
+            }
+
+
+            if (temp) {
+
+                findings.push(
+                    "Temperature " + temp
+                );
+
+            }
+
+
+            if (ecg) {
+
+                findings.push(
+                    "12 lead - " + ecg
+                );
+
+            }
+
+        }
+
+
+        /* -------------------------------------------
+           ABDO OBSERVATIONS
+        ------------------------------------------- */
+
+        if (system === "ABDO") {
+
+            const bgl =
+                document.getElementById(
+                    "abdoBGL"
+                ).value.trim();
+
+
+            if (bgl) {
+
+                findings.unshift(
+                    "BGL " + bgl
+                );
+
+            }
+
+        }
+
+
+        /* -------------------------------------------
+           ADD SYSTEM TO NARRATIVE
+        ------------------------------------------- */
+
+        if (findings.length > 0) {
+
+            sections.push(
+
+                system +
+                "\n" +
+                findings.join("\n")
+
+            );
+
+        }
+
+    });
+
+
+    narrative.value =
+        sections.join("\n\n");
+
+}
+
+
+/* ===================================================
+   RESET TEXT
+=================================================== */
+
+function resetText(id, defaultText) {
+
+    document.getElementById(id).value =
+        defaultText;
+
+
+    if (selectedSections[id]) {
+
+        updateNarrative();
+
+    }
+
+}
+
+
+/* ===================================================
+   RESET EXAMINATION
+=================================================== */
+
+function resetExamination() {
+
+    if (!confirm(
+        "Reset all examination findings?"
+    )) {
+
+        return;
+
+    }
+
+
+    const boxes =
+        document.querySelectorAll(
+            'input[type="checkbox"]'
+        );
+
+
+    boxes.forEach(function(box) {
+
+        box.checked = false;
+
+    });
+
+
+    const inputs = [
+
+        "respRR",
+        "respSpO2",
+        "respO2",
+        "cardioHR",
+        "cardioBP",
+        "cardioTemp",
+        "cardioECG",
+        "abdoBGL"
+
+    ];
+
+
+    inputs.forEach(function(id) {
+
+        document.getElementById(id).value = "";
+
+    });
+
+
+    updateNarrative();
+
+}
+
+
+/* ===================================================
+   CLEAR EVERYTHING
+=================================================== */
+
+function clearNarrative() {
+
+    if (!confirm(
+        "Clear the final narrative and all selections?"
+    )) {
+
+        return;
+
+    }
+
+
+    document.getElementById(
+        "finalNarrative"
+    ).value = "";
+
+
+    selectedSections = {
+
+        se: false,
+        shx: false,
+        onarrival: false,
+        onexamination: false
+
+    };
+
+
+    const buttons = {
+
+        seButton: "Add SE",
+
+        shxButton: "Add SHx",
+
+        onarrivalButton: "Add ON ARRIVAL",
+
+        onexaminationButton:
+            "Add ON EXAMINATION"
+
+    };
+
+
+    Object.keys(buttons).forEach(function(id) {
+
+        const button =
+            document.getElementById(id);
+
+
+        button.textContent =
+            buttons[id];
+
+
+        button.className =
+            "add-button";
+
+    });
+
+
+    const boxes =
+        document.querySelectorAll(
+            'input[type="checkbox"]'
+        );
+
+
+    boxes.forEach(function(box) {
+
+        box.checked = false;
+
+    });
+
+
+    const inputs = [
+
+        "respRR",
+        "respSpO2",
+        "respO2",
+        "cardioHR",
+        "cardioBP",
+        "cardioTemp",
+        "cardioECG",
+        "abdoBGL"
+
+    ];
+
+
+    inputs.forEach(function(id) {
+
+        document.getElementById(id).value = "";
+
+    });
+
+}
+
+
+/* ===================================================
+   DEFAULT TEXT
+=================================================== */
+
+const seDefault =
+    document.getElementById("se").value;
+
+
+const shxDefault =
+    document.getElementById("shx").value;
+
+
+const onarrivalDefault =
+    document.getElementById("onarrival").value;
+
+
+const onexaminationDefault =
+    document.getElementById("onexamination").value;
+
+
+</script>
+
+</body>
+
+</html>
