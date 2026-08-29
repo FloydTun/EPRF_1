@@ -1520,25 +1520,55 @@ function addSelected(section) {
     const selected = [];
 
     checkboxes.forEach(function(box) {
-
         selected.push(box.value);
-
     });
 
+    // Collect any entered clinical observations/vitals for this section.
+    const sectionInputs = {
+        RESP: [
+            ["respRR", "RR"],
+            ["respSpO2", "SpO₂"],
+            ["respO2", "O₂"]
+        ],
+        CARDIO: [
+            ["cardioHR", "HR"],
+            ["cardioBP", "BP"],
+            ["cardioTemp", "Temperature"],
+            ["cardioECG", "12 Lead ECG"]
+        ],
+        ABDO: [
+            ["abdoBGL", "BGL"]
+        ]
+    };
 
-    if (selected.length === 0) {
+    const enteredValues = [];
 
-        alert("No findings selected for " + section);
+    if (sectionInputs[section]) {
+        sectionInputs[section].forEach(function(item) {
+            const input = document.getElementById(item[0]);
 
-        return;
-
+            if (input && input.value.trim() !== "") {
+                enteredValues.push(item[1] + ": " + input.value.trim());
+            }
+        });
     }
 
+    // Don't add anything if the user has entered no values and selected no findings.
+    if (selected.length === 0 && enteredValues.length === 0) {
+        alert("No findings or values entered for " + section);
+        return;
+    }
 
     let text = section + "\n";
 
-    text += selected.join("\n");
+    // Add entered vitals/values first, followed by selected findings.
+    text += enteredValues.join("\n");
 
+    if (enteredValues.length > 0 && selected.length > 0) {
+        text += "\n";
+    }
+
+    text += selected.join("\n");
 
     addToNarrative(text);
 
